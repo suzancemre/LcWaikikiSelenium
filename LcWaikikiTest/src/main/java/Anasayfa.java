@@ -72,7 +72,7 @@ public class Anasayfa {
     List<WebElement> tumBedenler;
     public void rastgeleBedenSecimi(){
         try {
-            tumBedenler  = driver.findElements(By.id("option-size"));
+            tumBedenler  = driver.findElements(By.xpath("//div[@class='col-xs-12 size-area main-size-area pt-5']"));
             Thread.sleep(1000);
             Random random = new Random();
             int rastgeleBeden  = random.nextInt(tumBedenler.size());
